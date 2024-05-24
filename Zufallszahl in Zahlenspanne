@@ -1,0 +1,11 @@
+import random
+# Zahlen zwischen 1 und 1Milliarde
+r=random.randint(1,1000000000)
+v=1
+zufall=list (range(500))
+
+while r not in zufall:
+    print(r,"leider nein")
+    r=random.randint(1,1000000000)
+    v +=1
+print(r,"ist enhalten. Die Anzahl der Versuche war: ",v)
